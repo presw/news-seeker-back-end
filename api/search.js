@@ -9,7 +9,6 @@ const searchTopHeadlines = (req, res) => {
       res.status(404).send('We encountered an error.');
       return;
     }
-    console.log('Data:', data);
     res.status(200).json(data);
   });
 };
@@ -21,7 +20,6 @@ const searchArticles = (req, res) => {
       res.status(404).send('We encountered an error.');
       return;
     }
-    console.log('Article data:', data);
     res.status(200).json(data);
   });
 };
